@@ -20,3 +20,9 @@ last_name = "lovelace"
 full_name= first_name + " " + last_name
 message = "Hello, " + full_name.title() + ", I'm very glad to meet you!\nIn this case I used the concatenation"
 print(message)
+
+first_name = "MALE"
+last_name = "COOK"
+full_name = first_name + '-' + last_name
+message = f':{full_name.lower():}' + ':sunrise:'
+print(message)
