@@ -26,3 +26,9 @@ last_name = "COOK"
 full_name = first_name + '-' + last_name
 message = f':{full_name.lower():}' + ':sunrise:'
 print(message)
+
+first_name = "  MALE"
+last_name = "COOK  "
+full_name = first_name + '-' + last_name
+message = f':{full_name.lower().strip():}' + ':sunrise:'
+print(message)
