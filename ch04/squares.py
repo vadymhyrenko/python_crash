@@ -11,3 +11,6 @@ print(squares)
 
 squares = [value**2 for value in range(1,11)] # comprehension list
 print(squares)
+
+squares = [value**3 for value in range(1,10,2)] # comprehension list
+print(squares)
