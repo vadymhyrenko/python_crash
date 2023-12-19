@@ -1,5 +1,7 @@
 magicians = ["Gendalf", "Saruman", "Radagast"]
 print(magicians)
 
+
 for magician in magicians:
-    print(magician)
+    print(f"Very nice trick, {magician.title()}!\n")
+print("Thanks, everyone, for the great show!")
