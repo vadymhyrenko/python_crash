@@ -1,4 +1,4 @@
-unconfirmed_users = ['danny', 'semuel', 'carl', 'george']
+unconfirmed_users = ['danny', 'steve', 'carl', 'george']
 confirmed_users = []
 
 while unconfirmed_users:
