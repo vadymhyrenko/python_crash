@@ -1,26 +1,14 @@
-alien0 = {'color': 'green', 'points': 5}
-print(alien0['color'])
-print(alien0['points'])
+alien_0 = {
+    'color': 'green',
+    'points': '5',
+}
 
-new_points = alien0['points']
-print(f"You just earned {str(new_points)} points!")
+print(alien_0['color'])
+print(alien_0['points'])
 
-alien0['x_position'] = 0
-alien0['y_position'] = 25
+new_points = alien_0['points']
+print(f"You have earned {new_points} points!")
 
-print(alien0)
+alien_0['speed'] = 'medium'
 
-alien1 = {}
-
-alien1['x_position'] = 25
-alien1['y_position'] = 50
-print(alien1)
-
-
-alien1['y_position'] = 75
-print(alien1)
-
-alien0 = {'color': 'green', 'points': 5}
-print(alien0)
-del alien0['color']
-print(alien0)
+print(f"The {alien_0['color']}'s alien speed is {alien_0['speed']}")
