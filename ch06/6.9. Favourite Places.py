@@ -7,4 +7,3 @@ for person, places in favorite_places.items():
     print(f"\n{person.title()}'s favourite places are:")
     for place in places:
         print(f"- {place.title()}")
-       
