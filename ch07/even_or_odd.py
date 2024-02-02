@@ -1,4 +1,4 @@
-number = input("Please, enter a number to determine is if an even or an odd:\n")
+number = input("Please, enter a number to determine is it an even or an odd:\n")
 number = int(number)
 
 if number % 2 == 1:
