@@ -1,6 +1,6 @@
-def make_shirt(size, message_text):
-    print(f"Please make a {size} size T-Shirt with the following text: {message_text}")
+def make_shirt(size, text):
+    print(f"We're making you {size.title()} size t-shirt with the text: {text}\n")
 
 
-make_shirt('M', "Geek")
-make_shirt(size='L', message_text="Python is the best programming language!")
+make_shirt('m', 'pussies rule the world!')
+make_shirt(text='keep your brain calm', size='xl')

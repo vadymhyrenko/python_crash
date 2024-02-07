@@ -1,19 +1,18 @@
-def get_formatted_name(first_name, last_name):
-    """Return a full name, neatly formatted"""
+def formatted_name(first_name, last_name):
     full_name = f"{first_name} {last_name}"
     return full_name.title()
 
 
 while True:
-    print("\nPlease tell me you name:")
-    print("(enter 'q' at any time to quit)")
+    print("Please tell us who you are:")
+    print("press 'q' at any moment to quit the program")
 
-    f_name = input("First Name: ")
+    f_name = input("What is your first name? ")
     if f_name == 'q':
         break
-    l_name = input("Last Name: ")
+
+    l_name = input("What is your last name? ")
     if l_name == 'q':
         break
 
-    formatted_name = get_formatted_name(f_name, l_name)
-    print(f"Greetings, {formatted_name}!")
+    print(f"Greetings, {formatted_name(f_name, l_name)}!\n")

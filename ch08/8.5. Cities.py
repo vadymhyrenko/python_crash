@@ -1,7 +1,7 @@
-def describe_city(city='Kyiv', country='Ukraine'):
+def describe_city(city, country='Italy'):
     print(f"{city.title()} is in {country.title()}")
 
 
-describe_city()
-describe_city('Warshaw', 'Poland')
-describe_city(country='france', city='paris')
+describe_city('kyiv', 'ukraine')
+describe_city('rome')
+describe_city(city='odessa', country='ukraine')
