@@ -1,29 +1,31 @@
-def make_album(artist_name, album_title, songs_number=None):
-    """Return a dictionary containing an artist name and an album title"""
+def make_album(artist, title, tracks=0):
+    """Build a dictionary containing information about an album"""
     album_dict = {
-        'artist': artist_name.title(),
-        'album_title': album_title.title(),
+        'artist': artist.title(),
+        'title': title.title(),
     }
-    if songs_number:
-        album_dict['songs_number'] = songs_number
+    if tracks:
+        album_dict['tracks'] = tracks
     return album_dict
 
 
-prompt_artist_name = "\nEnter the artist's name: \n"
-prompt_album_name = "\nEnter the album's title: \n"
+# Prepare the prompts
+title_prompt = "\nWhat album are you thinking of? "
+artist_prompt = "Who's the artist? "
 
+# Let the user know how to quit
+print("Enter 'quit' at any time to stop.")
 
 while True:
-    print("\nPlease enter the information about the album:")
-    print("press 'q' to quit at any time:")
-
-    artist = input(prompt_artist_name)
-    if prompt_artist_name == 'q':
+    title = input(title_prompt)
+    if title == 'quit':
         break
 
-    album = input(prompt_album_name)
-    if prompt_album_name == 'q':
+    artist = input(artist_prompt)
+    if artist == 'quit':
         break
 
-    album = make_album(artist, album)
+    album = make_album(artist, title)
     print(album)
+
+print("\nThanks for responding!")

@@ -1,19 +1,28 @@
 def make_album(artist_name, album_title, songs_number=None):
-    """Return a dictionary containing an artist name and an album title"""
-    album_dict = {
+    """Function returns a dictionary"""
+    dictionary = {
         'artist': artist_name.title(),
-        'album_title': album_title.title(),
+        'title': album_title.title(),
     }
     if songs_number:
-        album_dict['songs_number'] = songs_number
-    return album_dict
+        dictionary['songs_number'] = songs_number
+    return dictionary
 
 
-album = make_album('metallica', 'saint anger', 15)
-print(album)
+prompt_artist_name = "\nEnter the artist's name: \n"
+prompt_album_name = "\nEnter the album's title: \n"
 
-album = make_album('blind guardian', 'victory')
-print(album)
+while True:
+    print("\nPlease enter the information about the album:")
+    print("press 'q' to quit at any time:")
 
-album = make_album('deep purple', 'color of the rain', 12)
-print(album)
+    artist = input(prompt_artist_name)
+    if artist == 'q':
+        break
+
+    album = input(prompt_album_name)
+    if album == 'q':
+        break
+
+    album = make_album(artist, album)
+    print(album)
