@@ -1,6 +1,4 @@
 import random
-
-
 class Die:
     """A simple class represents die rolling"""
 
